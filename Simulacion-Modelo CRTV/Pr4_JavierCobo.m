@@ -1,7 +1,7 @@
 clear; close all; clc;
 
-lambda1=1/4;
-lambda2=1/3;
+lambda1=1/3;
+lambda2=1/4;
 u1=2;
 d1=0.5;
 T=360;
@@ -23,7 +23,7 @@ for i=1:nele
     X(i,3)=n_med_n1;
     X(i,4)=n_med_n2;
     X(i,5)=n_med_n3;
-    disp(i);
+    
 end
 
 figure;

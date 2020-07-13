@@ -45,7 +45,7 @@ if X>T
     n_med_n2=0;
     n_med_n3=0;
       
-    return;
+    %return;
 else
     
     [n_med_n1,n1,t,NLL1,LL1,tll1,ts1] = llegada_cliente(X,n_med_n1,n1,t,NLL1,LL1,lambda1,tll1,u1,d1,ts1,T);
@@ -101,7 +101,7 @@ while ind < NLL2
 end
 
 ind=1;
-while ind < NLL2
+while ind < NLL3
     acumulo3=acumulo3+S3(ind)-LL3(ind);
     ind=ind+1;
 end
