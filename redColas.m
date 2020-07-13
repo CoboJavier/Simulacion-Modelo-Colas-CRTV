@@ -45,7 +45,7 @@ if X>T
     n_med_n2=0;
     n_med_n3=0;
       
-    return;
+    %return;
 else
     
     [n_med_n1,n1,t,NLL1,LL1,tll1,ts1] = llegada_cliente(X,n_med_n1,n1,t,NLL1,LL1,lambda1,tll1,u1,d1,ts1,T);
@@ -73,14 +73,14 @@ else
             %disp('3');
             tsuc=ts2;
             ts2=inf;
-            [tsuc,t,Ns2,S2,n_med_n2,n2,NLL2,LL2,lambda2,ts2,n_med_n3,n3,NLL3,LL3,u31,d31,ts3,u1,d1,ts1] = servicio_nodo_2(tsuc,t,Ns2,S2,n_med_n2,n2,NLL2,LL2,lambda2,ts2,n_med_n3,n3,NLL3,LL3,u31,d31,ts3,u1,d1,ts1)
+            [tsuc,t,Ns2,S2,n_med_n2,n2,NLL2,LL2,lambda2,ts2,n_med_n3,n3,NLL3,LL3,u31,d31,ts3,u1,d1,ts1] = servicio_nodo_2(tsuc,t,Ns2,S2,n_med_n2,n2,NLL2,LL2,lambda2,ts2,n_med_n3,n3,NLL3,LL3,u31,d31,ts3,u1,d1,ts1);
         end
         
         if min([tll1,ts1,ts2,ts3]) == ts3
             %disp('4');
             tsuc=ts3;
             ts3=inf;
-            [tsuc,n_med_n1,n1,t,Ns3,S3,n_med_n2,n2,NLL2,LL2,lambda2,ts2,n_med_n3,n3,NLL3,LL3,u31,d31,ts3,u1,d1,ts1] = servicio_nodo_3(tsuc,n_med_n1,n1,t,Ns3,S3,n_med_n2,n2,NLL2,LL2,lambda2,ts2,n_med_n3,n3,NLL3,LL3,u31,d31,ts3,u1,d1,ts1,u32,d32);
+            [tsuc,t,Ns3,S3,n_med_n3,n3,ts3] = servicio_nodo_3(tsuc,n_med_n1,n1,t,Ns3,S3,n_med_n2,n2,NLL2,LL2,lambda2,ts2,n_med_n3,n3,NLL3,LL3,u31,d31,ts3,u1,d1,ts1,u32,d32);
         end
     end
     

@@ -1,6 +1,7 @@
 function F =  extraerNormal(u,sigma)
 
-x=-1;
+y=extraerNormalEstandar;
+x=u+sigma*y; 
 
 while x < 0
     y=extraerNormalEstandar;
@@ -8,8 +9,6 @@ while x < 0
 end
 
 F=x;
-
-
 
 
 end

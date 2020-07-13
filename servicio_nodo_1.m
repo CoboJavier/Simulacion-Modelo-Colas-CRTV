@@ -8,7 +8,7 @@ S1(Ns1)=tsuc;
 
 U=rand;
 
-if U < 0.4
+if U <= 0.4
     n_med_n2=n_med_n2+n2*(tsuc-t);
     n2=n2+1;
     NLL2=NLL2+1;

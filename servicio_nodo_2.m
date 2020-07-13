@@ -9,7 +9,7 @@ if n2>0
     Y=extraerExponencial(lambda2);
     ts2=tsuc+Y;
 end
-
+n_med_n3=n_med_n3+n3*(tsuc-t);
 n3=n3+1;
 NLL3=NLL3+1;
 LL3(NLL3)=tsuc;
